@@ -21,7 +21,9 @@
     "tailwindcss": "^3.4.17"
   },
   "devDependencies": {
+    "@babel/core": "^7.28.4",
     "@types/react": "~19.1.0",
+    "babel-preset-expo": "^54.0.4",
     "typescript": "~5.9.2"
   },
   "private": true
