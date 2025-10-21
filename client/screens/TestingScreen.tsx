@@ -1,13 +1,10 @@
-import { StyleSheet, View } from "react-native";
-
-import "./global.css";
-
-import TestingScreen from "./screens/TestingScreen";
+import { StyleSheet, Text, View } from "react-native";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <TestingScreen />
+      <Text>This is a testing page.</Text>
+      {/* Add New Components here */}
     </View>
   );
 }
