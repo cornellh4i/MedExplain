@@ -11,9 +11,9 @@ export default function Button({ label, onPress }: ButtonProps) {
       <TouchableOpacity
         onPress={onPress}
         activeOpacity={0.7}
-        className="border border-[#0F3682] p-[10px] rounded-[30px]"
+        className="border border-[#121B49] p-[10px] rounded-[30px]"
       >
-        <Text className="text-[#0F3682]">{label}</Text>
+        <Text className="text-black">{label}</Text>
       </TouchableOpacity>
     </View>
   );
