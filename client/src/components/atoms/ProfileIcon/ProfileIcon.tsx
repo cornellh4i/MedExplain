@@ -1,3 +1,4 @@
+// client/src/components/atoms/ProfileIcon/ProfileIcon.tsx
 import React from "react";
 import { Image, Text, TouchableOpacity, View } from "react-native";
 
@@ -7,28 +8,28 @@ type ProfileIconProps = {
 };
 
 const ProfileIcon = ({ label, description }: ProfileIconProps) => {
-  const photo = require("../../../../assets/icon.png"); // adjust for photo
+  const photo = require("../../../../assets/icon.png"); 
 
   return (
     <TouchableOpacity
       className="bg-white rounded-2xl p-4 items-center justify-center"
-      style={{ alignSelf: "center" }}
       activeOpacity={1}
     >
       <Image
         source={photo}
         resizeMode="cover"
-        style={{ width: 142, height: 142, borderRadius: 71 }}
+        style={{ width: 142, height: 142, borderRadius: 71, alignSelf: "center" }}
       />
-      <View className="mt-4 items-center" style={{ maxWidth: 240 }}>
+
+      <View style={{ alignSelf: "center", alignItems: "center", marginTop: 12, maxWidth: 165 }}>
         <Text
-          className="text-center"
           style={{
             fontSize: 18,
-            lineHeight: 18,
-            fontWeight: "500",  
-            letterSpacing: -0.36, 
+            lineHeight: 21,
+            fontWeight: "400",
+            letterSpacing: -0.2,
             color: "#000",
+            textAlign: "center",
           }}
         >
           {label}
@@ -36,14 +37,14 @@ const ProfileIcon = ({ label, description }: ProfileIconProps) => {
 
         {description ? (
           <Text
-            className="text-center"
             style={{
-              marginTop: 4,
+              marginTop: 8, 
               fontSize: 14,
-              lineHeight: 14,
-              fontWeight: "400",   
-              letterSpacing: -0.28, 
+              lineHeight: 17,
+              fontWeight: "400",
+              letterSpacing: -0.2, 
               color: "#000",
+              textAlign: "center",
             }}
           >
             {description}
