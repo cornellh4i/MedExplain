@@ -19,20 +19,20 @@ export const Colors = {
   },
 };
 
-export const FontSize = {
-  h1: "28px",
-  h2: "24px",
-  h3: "14px",
-  body: "14px",
-  "body-2": "14px",
-  caption: "12px",
-};
+// export const FontSize = {
+//   h1: "28px",
+//   h2: "24px",
+//   h3: "14px",
+//   body: "14px",
+//   "body-2": "14px",
+//   caption: "12px",
+// };
 
-export const FontWeight = {
-  h1: 700,
-  h2: 600,
-  h3: 510,
-  body: 510,
-  "body-2": 400,
-  caption: 400,
-};
+// export const FontWeight = {
+//   h1: 700,
+//   h2: 600,
+//   h3: 510,
+//   body: 510,
+//   "body-2": 400,
+//   caption: 400,
+// };
