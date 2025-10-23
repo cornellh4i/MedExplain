@@ -1,5 +1,4 @@
 import { StyleSheet, View } from "react-native";
-
 import "./global.css";
 
 import TestingScreen from "./screens/TestingScreen";
