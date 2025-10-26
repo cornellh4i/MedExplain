@@ -5,6 +5,8 @@ import { Star } from "lucide-react-native";
 import SearchBar from "../components/SearchBar";
 import Card  from "../components/Card"
 
+import Button from "../components/Button/Button";
+
 export default function App() {
   const [input, setInput] = useState("");
 
@@ -24,6 +26,9 @@ export default function App() {
         label="Health Insights"
         description="View detailed analytics about your recent health data."
         className="w-[90%] mt-8"
+      <Button
+        label="Test Button"
+        onPress={() => console.log("✅", "The button was pressed!")}
       />
     </View>
   );
