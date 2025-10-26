@@ -12,6 +12,8 @@ export default function App() {
   );
 }
 
+// className="flex-1 bg-white items-stretch justify-center"
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
