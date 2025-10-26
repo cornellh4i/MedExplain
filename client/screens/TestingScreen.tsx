@@ -3,9 +3,9 @@ import { useState } from "react";
 import { Star } from "lucide-react-native";
 
 import SearchBar from "../components/SearchBar";
-import Card  from "../components/Card"
+import Card from "../components/Card";
 
-import Button from "../components/Button/Button";
+import Button from "../components/Button";
 
 export default function App() {
   const [input, setInput] = useState("");
@@ -20,12 +20,13 @@ export default function App() {
         value={input}
         onChangeText={(text) => setInput(text)}
       />
-      
+
       <Card
         icon={Star}
         label="Health Insights"
         description="View detailed analytics about your recent health data."
-        className="w-[90%] mt-8"
+        className="w-[90%] mt-8 mb-8"
+      />
       <Button
         label="Test Button"
         onPress={() => console.log("✅", "The button was pressed!")}
@@ -33,4 +34,3 @@ export default function App() {
     </View>
   );
 }
-
