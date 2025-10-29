@@ -1,24 +1,19 @@
-import { StyleSheet, View } from "react-native";
+import { StyleSheet, ScrollView } from "react-native";
 
 import "./global.css";
 
-import TestingScreen from "./screens/TestingScreen";
+import Home from "./screens/home";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <TestingScreen />
-    </View>
+    <ScrollView
+      className="flex-1 bg-white"
+      contentContainerClassName="items-center justify-start"
+      bounces={false}                
+      alwaysBounceVertical={false} 
+      overScrollMode="never"> 
+      
+      <Home/>
+    </ScrollView>
   );
 }
-
-// className="flex-1 bg-white items-stretch justify-center"
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
