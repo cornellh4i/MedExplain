@@ -1,5 +1,5 @@
 import { StyleSheet, Text, View } from "react-native";
-import ProfileIcon from "../src/components/atoms/ProfileIcon/ProfileIcon";
+import ProfileIcon from "../components/ProfileIcon";
 
 export default function App() {
   return (
