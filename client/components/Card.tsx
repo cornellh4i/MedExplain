@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { View, Text } from "react-native";
+import { View, Text, ViewStyle} from "react-native";
 import { LucideIcon } from "lucide-react-native";
 
 type CardProps = {
@@ -8,6 +8,7 @@ type CardProps = {
   label: string;
   description?: string;
   color?: string;
+  style?: ViewStyle;
 };
 
 const Card: FC<CardProps> = ({ className, icon: Icon, label, description, color}) => {
