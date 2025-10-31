@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { View, Text } from "react-native";
+import { View, Text, ViewStyle} from "react-native";
 import { LucideIcon } from "lucide-react-native";
 
 type CardProps = {
@@ -7,13 +7,15 @@ type CardProps = {
   icon?: LucideIcon;
   label: string;
   description?: string;
+  color?: string;
+  style?: ViewStyle;
 };
 
-const Card: FC<CardProps> = ({ className, icon: Icon, label, description }) => {
+const Card: FC<CardProps> = ({ className, icon: Icon, label, description, color}) => {
   return (
-    <View className={`bg-white border-gray-300 rounded-[8px] p-[20px] shadow-lg ${className}`}>
+    <View className={`bg-white border-gray-300 rounded-[8px] p-[21px] shadow-lg ${className}`}>
       <View className="flex-col mb-2 gap-4">
-        {Icon && <Icon size={24} color="#0F172A"  />}
+        {Icon && <Icon size={28} color={color}  />}
         <Text className="text-[24px] font-normal text-slate-900 mt-[13px]">{label}</Text>
       </View >
       {description && (
