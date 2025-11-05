@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .typography-h1 {
+    @apply text-[28px] font-bold;
+  }
+
+  .typography-h2 {
+    @apply text-[24px] font-semibold;
+  }
+
+  .typography-h3 {
+    @apply text-[14px] font-medium;
+  }
+
+  .typography-body {
+    @apply text-[14px] font-medium;
+  }
+
+  .typography-button {
+    @apply text-[14px] font-medium;
+  }
+
+  .typography-body2 {
+    @apply text-[14px] font-normal;
+  }
+
+  .typography-caption {
+    @apply text-[12px] font-normal;
+  }
+}
