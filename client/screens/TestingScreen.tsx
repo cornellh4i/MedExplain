@@ -4,7 +4,7 @@ import { Star } from "lucide-react-native";
 
 import SearchBar from "../components/SearchBar";
 import Card from "../components/Card";
-
+import ProfileIcon from "../components/ProfileIcon";
 import Button from "../components/Button";
 
 export default function App() {
@@ -14,6 +14,10 @@ export default function App() {
     <View className="flex-1 bg-white items-center justify-center">
       <Text>This is a testing page.</Text>
       {/* Add New Components here */}
+      <ProfileIcon
+        label="Monika Safford, MD"
+        description="PALS Co-Founder"
+      />
       <SearchBar
         className="mt-4 w-full"
         placeholder="searching.."
