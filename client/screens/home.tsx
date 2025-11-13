@@ -4,6 +4,7 @@ import { LinearGradient } from "expo-linear-gradient";
 import { Heart, Pill, ShieldAlert } from "lucide-react-native";
 import SearchBar from "../components/SearchBar";
 import Card from "../components/Card";
+import Button from "../components/Button";
 
 export default function Home() {
   const [input, setInput] = useState("");
@@ -12,8 +13,6 @@ export default function Home() {
   return (
     <View className="flex-1 bg-white">
       <StatusBar translucent backgroundColor="transparent" barStyle="dark-content" />
-
-      
       <LinearGradient
         colors={["#E5EBFF", "#FFFFFF"]}
         start={{ x: 0, y: 0 }}
@@ -105,6 +104,57 @@ export default function Home() {
                 className="bg-white w-[391px] rounded-[12px] p-[21px] shadow-[0_4px_12px_rgba(0,0,0,0.06)]"
               />
             </View>
+          </View>
+          <View className="flex flex-col px-[32px] gap-[24px] ">
+            <Text className="text-[24px] font-[700]">
+              We ensure our articiles are credible and trustworthy.
+            </Text>
+            <View className="flex-col gap-[12px]">
+              <Text className="text-[14px]">
+                Our content is curated and crafted by experienced medical professionals, 
+                including licensed doctors and medical students who work under the expert 
+                guidance of experienced physicians. 
+              </Text>
+              <Text className="text-[14px] ">
+                Information is then subjected to a thorough evaluation process by qualified 
+                experts to ensure its precision. This review process enhances the credibility
+                of the information presented, providing users with reliable insights into various health topics. 
+                Finally, our dedication to transparency is reflected in our practice of displaying the credentials 
+                of the content creators.
+              </Text>
+            </View>
+          </View> 
+          <View className="h-[200px]">
+            {/* Temporary Space for graph */}
+          </View>
+          <View className="flex flex-col px-[32px] gap-[24px]"> 
+            <Text className="text-[24px] font-[700]">
+              Clear and easy-to-understand
+            </Text>
+            <View className="flex-col gap-[12px]">
+              <Text className="text-[14px]">
+                Our content is curated and crafted by experienced medical professionals, 
+                including licensed doctors and medical students who work under the expert 
+                guidance of experienced physicians. 
+              </Text>
+              <Text className="text-[14px] ">
+                Information is then subjected to a thorough evaluation process by qualified 
+                experts to ensure its precision. This review process enhances the credibility
+                of the information presented, providing users with reliable insights into various health topics. 
+                Finally, our dedication to transparency is reflected in our practice of displaying the credentials 
+                of the content creators.
+              </Text>
+            </View>
+            <Button 
+              className="w-full rounded-md text-center py-[12px] px-[24px] bg-[#0F3682] "
+              color={"text-white text-[14px] font-medium"}
+              label="Learn more about us" 
+              onPress={() => void(0)}/>
+          </View>
+          <View className="flex flex-col px-[32px] gap-[24px] mt-[160px]">
+            <Text className="text-[24px] font-[700]">
+              We’re backed by 100+ leading medical and sponsor organizations
+            </Text>
           </View>
         </ScrollView>
       </LinearGradient>
