@@ -3,10 +3,15 @@ import { StyleSheet, View } from "react-native";
 import "./global.css";
 
 import TestingScreen from "./screens/TestingScreen";
+import Footer from "./components/molecules/Footer/Footer";
+import Header from "./components/molecules/Header/Header";
+
 
 export default function App() {
   return (
     <View style={styles.container}>
+      <Header />
+      <Footer />
       <TestingScreen />
     </View>
   );
