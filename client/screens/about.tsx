@@ -1,11 +1,11 @@
 // client/screens/about.tsx
 import React from "react";
 import {
-    SafeAreaView,
-    ScrollView,
-    StyleSheet,
-    Text,
-    View
+  SafeAreaView,
+  ScrollView,
+  StyleSheet,
+  Text,
+  View
 } from "react-native";
 import ProfileIcon from "../components/ProfileIcon";
 
@@ -74,7 +74,6 @@ export default function About() {
 <View style={styles.frame3893}>
 <View style={styles.frame3895}> 
             <View style={styles.hugBox}>
-              {/* still editing */}
             <Text style={styles.statLarge}>88%</Text>
             <Text style={styles.calloutBody}>
               of adults in the US have suboptimal health literacy
@@ -86,38 +85,72 @@ export default function About() {
 </View>
 
 
-          {/* PILL ROW */}
-          <View style={styles.pillRow}>
-            <View style={styles.pill}>
-              <Text style={styles.pillText}>
-                Improving cardiovascular disease disparities
-              </Text>
-            </View>
-            <View style={styles.pill}>
-              <Text style={styles.pillText}>
-                Co-management of diabetes and cancer
-              </Text>
-            </View>
-            <View style={styles.pill}>
-              <Text style={styles.pillText}>
-                Medication barriers after hospital discharge
-              </Text>
-            </View>
-          </View>
+          {/* RESEARCH SECTION */}
+<View style={styles.researchSection}>
+  <View style={styles.researchContent}>
+    <Text style={styles.researchHeading}>
+      Beyond being a search engine,{"\n"}
+      we're{" "}
+      <Text style={styles.researchHeadingItalic}>
+        pushing the needle
+      </Text>{" "}
+      of medical research
+    </Text>
 
-          {/* TEAM HEADER */}
-          <View style={styles.teamHeader}>
-            <Text style={styles.sectionTitle}>
-              We wouldn't be who we are without our team
-            </Text>
-          </View>
+    <View style={styles.pillRow}>
+      <View style={styles.pill}>
+        <Text style={styles.pillText}>
+          Improving cardiovascular disease disparities
+        </Text>
+      </View>
+      <View style={styles.pill2}>
+        <Text style={styles.pillText}>
+          Knowledge acquisition and rates of HPV vaccination
+        </Text>
+      </View>
+      <View style={styles.pill3}>
+        <Text style={styles.pillText}>
+          Co-management of diabetes and cancer
+        </Text>
+      </View>
+      <View style={styles.pill4}>
+        <Text style={styles.pillText}>
+          Medication barriers after hospital discharge
+        </Text>
+      </View>
+      <View style={styles.pill5}>
+        <Text style={styles.pillText}>
+          Cardiovascular disease risk with rheumatoid arthritis
+        </Text>
+      </View>
+      <View style={styles.pill6}>
+        <Text style={styles.pillText}>
+          Improving disparities for hypertensive individuals
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
 
-          <View style={{ marginBottom: 32 }}>
-            <ProfileIcon
-              label="Keith Roach, MD"
-              description="Director of Creative"
-            />
-          </View>
+
+{/* TEAM SECTION */}
+<View style={styles.teamSection}>
+  <View style={styles.teamContent}>
+    <Text style={styles.teamTitle}>
+      We wouldn't be who we are without our team
+    </Text>
+
+    <View style={styles.teamCardWrap}>
+      <ProfileIcon
+        label="Jeffrey R. Curtis, MD"
+        description="PALS Co-Founder"
+      />
+    </View>
+  </View>
+</View>
+
+
+
         </View>
       </ScrollView>
     </SafeAreaView>
@@ -249,65 +282,158 @@ subHeading: {
   letterSpacing: -0.28,
 },
 
-  pillRow: {
-    flexDirection: "row",
-    flexWrap: "wrap",
-    marginBottom: 24,
-  },
-  pill: {
-    paddingHorizontal: 12,
-    paddingVertical: 6,
-    borderRadius: 999,
-    backgroundColor: "#E6F0FF",
-    marginRight: 8,
-    marginBottom: 8,
-  },
-  pillText: {
-    fontSize: 12,
-    color: "#0F3682",
-  },
-
-frame3893:{},
-frame3895: {
-  marginTop: 12,
-  marginBottom: 24,
-  backgroundColor: "#F7F7F8",
-  flexDirection: "row",
+researchSection: {
+  width: "100%",
+  paddingHorizontal: 32,
+  marginBottom: 80,
   alignItems: "center",
-  justifyContent: "flex-start",
-  width: 178,
-  height: 314,
-  alignSelf: "flex-start",
-  flexWrap: "nowrap",
 },
 
-  statLarge: {
-    fontSize: 53.082,
-    fontWeight: "700",
-    color: "#000",
-    letterSpacing: -1.592,
-  },
+researchContent: {
+  width: "100%",
+  maxWidth: 364,
+  alignItems: "flex-start",
+},
 
-  hugBox: {
-  paddingHorizontal: 10,
-  paddingVertical: 6,
+researchHeading: {
+  fontSize: 24,
+  fontWeight: "700",
+  color: "#000",
+  letterSpacing: -0.48,
+},
+
+researchHeadingItalic: {
+  fontSize: 24,
+  fontWeight: "700",
+  color: "#000",
+  letterSpacing: -0.48,
+  fontStyle: "italic",
+},
+
+  pillRow: {
+  width: "100%",
+  marginTop: 24,
+  alignItems: "center"
+},
+
+pill: {
+  paddingVertical: 6, 
+  alignSelf: "center",
+  paddingHorizontal: 18,
+  borderRadius: 18,
+  borderWidth: 1.2,
+  borderColor: "#F9F9F9",
+  backgroundColor: "#433592",
   alignItems: "center",
   justifyContent: "center",
-  marginRight: 16,
-  backgroundColor: "transparent",
-  alignSelf: "flex-start",
+  marginBottom: 21.53,
 },
 
-  calloutBody: {
-    fontSize: 16.22,
-    fontWeight: 500,
-    color: "#000",
-    opacity: 0.66,
-    lineHeight: 24.329,
-    letterSpacing: -0.324,
-    maxWidth: 220,
-    flexShrink: 1,
+pill2: {
+  alignSelf: "center",
+  paddingVertical: 5.98,
+  paddingHorizontal: 17.939,
+  borderRadius: 17.939,
+  borderWidth: 1.196,         
+  borderColor: "#F9F9F9",
+  backgroundColor: "#67A342",
+  alignItems: "center",
+  justifyContent: "center",
+  marginBottom: 21.53,
+},
+pill3: {
+  alignSelf: "center",
+  paddingVertical: 5.98,
+  paddingHorizontal: 17.939,
+  borderRadius: 17.939,
+  borderWidth: 1.196,         
+  borderColor: "#F9F9F9",
+  backgroundColor: "#2F5DBA",
+  alignItems: "center",
+  justifyContent: "center",
+  marginBottom: 21.53,
+},
+
+pill4: {
+  alignSelf: "center",
+  paddingVertical: 5.98,
+  paddingHorizontal: 17.939,
+  borderRadius: 17.939,
+  borderWidth: 1.196,         
+  borderColor: "#F9F9F9",
+  backgroundColor: "#C145AB",
+  alignItems: "center",
+  justifyContent: "center",
+  marginBottom: 21.53,
+},
+
+pill5: {
+  alignSelf: "center",
+  paddingVertical: 5.98,
+  paddingHorizontal: 17.939,
+  borderRadius: 17.939,
+  borderWidth: 1.196,         
+  borderColor: "#F9F9F9",
+  backgroundColor: "#86BFFF",
+  alignItems: "center",
+  justifyContent: "center",
+  marginBottom: 21.53,
+},
+
+pill6: {
+  alignSelf: "center",
+  paddingVertical: 5.98,
+  paddingHorizontal: 17.939,
+  borderRadius: 17.939,
+  borderWidth: 1.196,         
+  borderColor: "#F9F9F9",
+  backgroundColor: "#433592",
+  alignItems: "center",
+  justifyContent: "center",
+  marginBottom: 21.53,
+},
+
+
+  pillText: {
+    fontSize: 13.155,
+    color: "#FFF",  fontWeight: "500",
+letterSpacing: -0.263,
+textAlign: "center"
+
   },
+
+frame3893:{
+  width: "100%",   
+  alignItems: "center",},
+frame3895: {
+  marginTop: 24,
+},
+
+hugBox: {
+  gap: "21.419",
+  flexDirection: "row",
+  alignItems: "center",
+  display: "flex",
+},
+
+statLarge: {
+  fontSize: 53.082,
+  fontWeight: "700",
+  color: "#000",
+  letterSpacing: -1.592,
+  textAlign: "center",
+},
+
+calloutBody: {
+  fontSize: 16.22,
+  fontWeight: "500",
+  color: "#000",
+  opacity: 0.66,
+  lineHeight: 24.329,
+  letterSpacing: -0.324,
+  width: 178.815,          
+  marginLeft: 21.42,       
+},
 
   teamHeader: {
     marginTop: 24,
@@ -318,5 +444,32 @@ frame3895: {
     fontWeight: "700",
     color: "#000",
   },
+
+teamSection: {
+  width: "100%",
+  paddingHorizontal: 32,
+  marginTop: 80,
+  marginBottom: 80,
+  alignItems: "center",
+},
+
+teamContent: {
+  width: "100%",
+  maxWidth: 364,
+  alignItems: "flex-start",
+},
+
+teamTitle: {
+  fontSize: 24,
+  fontWeight: "700",
+  color: "#000",
+  letterSpacing: -0.48,
+  lineHeight: 28,
+  marginBottom: 24,
+},
+
+teamCardWrap: {
+  width: "100%",
+},
 });
 
